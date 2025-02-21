@@ -1,0 +1,7 @@
+theme: minima
+
+# Site settings
+title: "lemullins.github.io"
+description: "A portfolio of AI and data engineering projects and blog posts"
+baseurl: ""
+url: ""
