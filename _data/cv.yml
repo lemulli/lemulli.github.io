@@ -2,96 +2,98 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Lee E. Mullins
+    - name: Location
+      value: Atlanta, Georgia
+    - name: Email
+      value: your.email@example.com
+    - name: Website
+      value: https://yourdomain.com
     - name: Languages
-      value: English, German
+      value: English
+    - name: Interests
+      value: AI + Healthcare, Data Quality, Workflow Automation, Education Tech
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Bioinformatics
+      institution: Georgia Institute of Technology
+      year: 2022 – 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Graduated December 2024
+        - Focus on machine learning, spatial transcriptomics, and healthcare data
+        - Relevant courses: Regression, ML, Data Structures, Applied Genomics
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Data Analyst, Biomedical Informatics
+      institution: Emory University
+      year: 2024 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+        - Developed Docker-based MRI QC pipelines (BIDS-compliant, PHI-scrubbing)
+        - Built web-based QC tool for structural scans (NiBabies, MRIQC, Monaifbs)
+        - Managed data harmonization across MRI, EHR, and genomics datasets
+        - Led NIH/NDA submissions, IRB protocol support, and junior RA training
+        - Streamlined internal data systems and server environments for reproducibility
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Tumor Cell Type Prediction App
+      year: 2024
+      description:
+        - 3D spatial transcriptomics classifier for tumor heterogeneity (94% accuracy)
+        - React frontend, AWS Lambda backend, DynamoDB for results storage
+        - Maps Leading Edge vs Tumor Core in cancer tissue samples
+    - title: BIDS MRI QC Toolkit
+      year: 2024
+      description:
+        - CLI + web interface for fMRI and structural MRI QC
+        - Includes slice detection, bias correction, skull stripping, and HTML reports
+        - Fully containerized via Docker and hosted on AWS
+    - title: Socratic AI Writing Coach (Google Docs Extension)
+      year: 2024
+      description:
+        - Chrome extension offering structured feedback inside Google Docs
+        - Uses AWS-hosted LLM (DeepSeek) for inference based on age + genre
+        - Encourages critical thinking, never rewrites student work
 
-- title: Honors and Awards
+- title: Hackathons & Collaborative Work
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Salesforce AgentForce Hackathon
+      year: 2025 (ongoing)
+      description:
+        - Built a custom data cleanup agent with Salesforce Admin partner
+        - Used Salesforce CLI, Metadata API, REST API, and Trailhead training
+        - Performs deduplication, standardization, and field completion
+        - Currently adding UI dashboard and multi-object support
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, SQL, JavaScript, Bash, R
+    - title: Tools & Platforms
       items:
-        - Description 1.
-        - Description 2.
+        - Salesforce CLI, AWS Lambda, Docker, React, Git, Jupyter, FSL
+    - title: Domains
+      items:
+        - MRI & Neuroimaging (BIDS, NIfTI, DICOM)
+        - Genomics (EPIC array), Clinical EHRs (Epic Cosmos)
+        - CRM & Data Quality (Salesforce, metadata cleaning)
+    - title: Focus Areas
+      items:
+        - Workflow Automation, AI for Education, Predictive Modeling
+        - Data Governance, Healthcare Informatics, NLP
 
-- title: Other Interests
+- title: Looking For
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Salesforce roles (Solutions Engineer, Developer, Analyst)
+    - Healthcare AI or data quality consulting (e.g., PwC, Comcast)
+    - EdTech or NLP-focused roles emphasizing structure and reasoning
+    - Hybrid opportunities blending AI, data, and product-thinking
