@@ -4,7 +4,7 @@ title: AI Writing Feedback for Google Docs
 description: Socratic writing coach focused on structure, clarity, and age-appropriate feedback
 img: assets/img/google-docs-writing-extension.jpg
 importance: 2
-category: fun
+category: in progress
 related_publications: false
 ---
 

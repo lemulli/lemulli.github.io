@@ -1,81 +1,92 @@
 ---
 layout: cv
 permalink: /cv/
-title: resume
-nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: Data analyst and healthcare AI specialist with a background in bioinformatics, MRI/QC workflows, and enterprise CRM tooling.
-toc:
-  sidebar: left
----
-### Summary
-
-Data analyst and healthcare AI specialist with a background in bioinformatics, MRI/QC workflows, and enterprise CRM tooling. I build efficient, human-centered solutions that improve data quality, research reproducibility, and workflow automation—especially in healthcare and edtech.
-
+title: cv
+nav: false
+nav_order: 4
+cv_pdf: example_pdf.pdf
+description: # This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
 ---
 
-### Work Experience
+<div class="cv-content" markdown="1">
 
-#### Data Analyst — Emory University, Biomedical Informatics Lab  
-_Aug 2024 – Present_  
-- Built Docker-based MRI QC tools (structural + fMRI) and web interfaces using NiBabies, MRIQC, Monaifbs  
-- Designed reproducible workflows for multi-modal datasets (MRI, EHR, genomics)  
-- Automated IRB support, data curation, and NIH/NDA submissions  
-- Collaborated across teams (IT, postdocs, junior RAs) to streamline lab infrastructure  
+<div class="header" markdown="1">
+# LEE MULLINS
+lee.ellen.mullins@gmail.com | 706-400-9302 | Atlanta, Georgia
+</div>
 
----
+<div class="section" markdown="1">
+# SUMMARY 
+Data engineer and biomedical informatics specialist focused on building observable,
+containerized data pipelines for medical imaging. Experienced in QC gating logic, high-integrity
+data transformations, and HIPAA/IRB-compliant workflows. Passionate about reproducible
+research and cross-functional collaboration in complex data environments.
+</div>
 
-### Education
+<div class="section" markdown="1">
+# TECHNICAL SKILLS
+Languages & Scripting: Python, SQL, Bash, HTML/CSS, JavaScript  
+Frameworks & Libraries: Pandas, NumPy, Scikit-learn, Flask, Matplotlib, Seaborn  
+Data Engineering & ML: Data pipeline design, Model deployment, Data validation and compliance  
+Cloud & DevOps: AWS (Lambda, DynamoDB, API Gateway, S3), Docker, Git, OAuth2, CLI tools  
+Tools & Platforms: Salesforce (AgentForce, GenAI), Jupyter, VS Code, GitHub, Linux  
+Key Strengths: Data observability, Reproducibility, Governance alignment, Human-in-the-loop
+</div>
 
-#### Georgia Institute of Technology — M.S. in Bioinformatics  
-_Graduated Dec 2024_  
-- Courses: Machine Learning, Regression, Data Structures, Genomics  
-- Final projects in spatial transcriptomics, AI feedback tools, and data science for healthcare  
+<div class="section" markdown="1">
+# WORK EXPERIENCE
+Sept 2024 - Present Data Analyst, Emory University School of Medicine  
+Developed reproducible pipelines for MRI data, enabling scalable infant health research.  
+Created tools for structural MRI QC (bias correction, skull stripping), packaging workflows for
+team-wide reuse.  
+Converted DICOM to BIDS with strict metadata enforcement and PHI scrubbing; ensured NIH/
+NDA audit readiness.  
+Standardized cross-lab datasets by implementing clear directory structures, automated CSV
+generation, and permissioned access to reduce confusion and data loss.  
+Bridged communication gaps across researchers, postdocs, and IT by writing documentation,
+training users, and managing updates.  
+Advocated for better workflow planning, building systems to track dataset progress and support
+cross-functional collaboration.
+</div>
 
----
+<div class="section" markdown="1">
+# SELECTED PROJECTS
+Salesforce Agentforce Hackathon  
+BIDS MRI QC Pipeline – Python, Docker, Flask  
+DICOM-to-BIDS Conversion Package – Python, Pydicom, NiBabel  
+Cell Classification Pipeline on AWS – Python, Lambda, DynamoDB, OAuth  
 
-### Selected Projects
+Designing a GenAI-powered agent to monitor CRM data quality, detect anomalies, and suggest
+standardizations. Uses approval-based automation to maintain governance and trust. In Progress.  
 
-#### 🧠 Tumor Cell Type Prediction App  
-- Classifier for spatial transcriptomics (LE vs TC tumor zones, ~94% accuracy)  
-- Built with React, AWS Lambda, DynamoDB  
-- Enables 3D tissue mapping for precision oncology  
-[🔗 View Project](/projects/1_spatial_final)
+Built a modular QC pipeline for structural/functional MRI in BIDS format. Included automated
+preprocessing, a web-based annotation tool, gated validation, and HTML report generation.  
 
-#### 🧪 MRI QC Toolkit (Docker + Web UI)  
-- Python-based QC for BIDS MRI data: bias correction, skull stripping, HTML reports  
-- Flask-based annotation interface + CLI tools  
-[🔗 View Project](/projects/2_project)
+Developed a pip-installable tool to convert raw DICOM to BIDS-compliant datasets with PHI
+scrubbing, JSON validation, and structured logging.  
 
-#### ✍️ Google Docs AI Writing Coach  
-- Chrome extension that provides Socratic, age-aware writing feedback  
-- Powered by AWS-hosted DeepSeek LLM  
-[🔗 View Project](/projects/essay_extension)
+Deployed a secure cloud-based inference pipeline for single-cell classification. Enabled OAuth2-
+authenticated access and logged results to DynamoDB for scalable team use.
+</div>
 
----
+<div class="section" markdown="1">
+# EDUCATION 
+M.S., Bioinformatics  
+Georgia Institute of Technology, GPA: 3.7  
+Coursework: Computational Genomics, Machine Learning, Data Structures, Databases.  
+Capstone: Cloud-deployed ML model for cell classification using AWS services.  
+Aug 2022 - Aug 2024
+</div>
 
-### Hackathons
+<div class="section" markdown="1">
+# COMMUNITY ENGAGEMENT
+"What Is AI, Really?" – Gwinnett County Public Library Upcoming 2025  
+Introductory talk for parents and community members on how AI works, what it can and can't do,
+and its growing role in education, work, and daily life.  
 
-#### Salesforce AgentForce Hackathon (2025)  
-- Developed in-app CRM cleanup agent (deduplication, standardization, missing field detection)  
-- Built with Salesforce CLI, REST & Metadata APIs  
-[🔗 View Project](/projects/hackathon)
+STEM Outreach Session – Local Middle School (7th Grade) Feb 2025  
+Led an interactive talk on proteins, genomics, brain imaging, and AI, including a demo on how gene
+mutations affect phenotype and a Q&A on future tech and medicine.
+</div>
 
----
-
-### Skills
-
-- **Languages:** Python, SQL, JavaScript, Bash, R  
-- **Tools:** Docker, AWS Lambda, React, Git, FSL, Salesforce CLI  
-- **Domains:** MRI (BIDS, NiFTI), EHR (Epic Cosmos), Genomics (EPIC), CRM (Salesforce)  
-- **Focus Areas:** Workflow automation, AI/ML, NLP in education, healthcare data quality  
-
----
-
-### Interests
-
-- AI for healthcare and education  
-- Data quality & automation  
-- CRM optimization  
-- Voice interfaces and NLP design
+</div>
