@@ -64,21 +64,29 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
+          cache: "pip"
+
+      - name: Install Node.js (for PurgeCSS)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -86,18 +94,23 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Purge unused CSS 🧹
-        run: |
           npm install -g purgecss
-          purgecss -c purgecss.config.js
+          export JEKYLL_ENV=production
+          bundle install
+          bundle exec jekyll build
+          purgecss -c purgecss.config.js || echo "PurgeCSS skipped"
+
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: _site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true
+          clean: true
