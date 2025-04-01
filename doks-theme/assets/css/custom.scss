@@ -1,0 +1,106 @@
+---
+# This ensures Jekyll processes this file
+---
+
+/**
+ * Custom styles (custom.scss)
+ * Additional styling tweaks for the site
+ */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+/* Base text styles */
+body {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Hide micro navigation */
+.micro-nav {
+  display: none !important;
+}
+
+/* Hide About button in author section */
+.hero-subheader__author .btn {
+  display: none;
+}
+
+/* Accent text styles */
+.hero-subheader__desc,
+.nav-grid__title,
+.nav-grid__excerpt,
+.hero-subheader__author-title {
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.1rem;
+}
+
+/* Make grid titles bold */
+.nav-grid__title {
+  font-weight: bold;
+}
+
+/* Hero section customizations */
+.hero-subheader__title {
+  font-family: 'Merriweather', serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 12.5rem;
+  
+  @media (min-width: 768px) {
+    font-size: 4.5rem;
+  }
+
+  &::after {
+    content: 'portfolio page';
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 2rem !important;
+    text-align: right;
+    display: block;
+    margin-top: 0.5rem;
+    
+    
+    @media (min-width: 768px) {
+      font-size: 3.5rem !important;
+      padding-right: 5rem;
+    }
+  }
+}
+
+.hero-subheader__desc {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+}
+
+/* Further reduce hero header size for specific pages if needed */
+.default-layout .hero-subheader {
+  padding: 1rem 0 9rem 0;
+  
+  @media (min-width: 768px) {
+    padding: 5rem 0 10rem 0;
+  }
+}
+
+/* Adjust author section spacing */
+.hero-subheader__author {
+  margin-top: 1rem;
+}
+
+/* Make grid items more compact */
+.nav-grid__content {
+  padding: 1.5rem;
+}
+
+/* Hide the About button in the author section */
+.author__title {
+    .btn {
+        display: none;
+    }
+}

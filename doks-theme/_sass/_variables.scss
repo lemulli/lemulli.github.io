@@ -8,7 +8,7 @@ $color-white: #fff !default;
 $color-black: #000 !default;
 $color-dark: #333 !default;
 $color-dark-blue: #253951 !default;
-$color-yellow: #f6d000 !default;
+$color-yellow: #c9fffc !default;
 
 // Base
 $color-h2-border: #dadada !default;
@@ -43,11 +43,11 @@ $color-footer-copyright: #bdbdbd !default;
 $color-social-item: #bdbdbd !default;
 
 // Themes
-$color-theme-green: #F0FAE6 !default;
+$color-theme-green: #eaf1eb !default;
 $color-theme-blue: #E8F2FC !default;
 $color-theme-purple: #FDE8F8 !default;
 $color-theme-red: #FFECE6 !default;
-$color-theme-yellow: #FCFDE8 !default;
+$color-theme-yellow: #f5f9ff !default;
 
 /* ----- Font families ----- */
 $font-family-primary: 'Noto Sans', sans-serif !default;
@@ -100,9 +100,13 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
 
 // Container
-$container-tablet: (720px + $grid-gutter-width) !default;
+$container-tablet: (960px + $grid-gutter-width) !default;
 $container-sm: $container-tablet !default;
-$container-desktop: (940px + $grid-gutter-width) !default;
+$container-desktop: (1200px + $grid-gutter-width) !default;
 $container-md: $container-desktop !default;
-$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-large-desktop: (1400px + $grid-gutter-width) !default;
 $container-lg: $container-large-desktop !default;
+
+// Content widths
+$content-width: 10 !default; // Main content takes 10 columns
+$sidebar-width: 2 !default;  // Sidebar takes 2 columns

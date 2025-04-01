@@ -1,33 +1,39 @@
 # Theme settings
 doks:
     baseurl:
-    color_theme: # Available themes: blue (default), green, purple, red and yellow
+    color_theme: yellow # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
-            text: Project name
+            text: Lee Mullins
             image:
         nav:
-            - item_name: Item 1
-              item_url: '#'
-            - item_name: Item 2
-              item_url: '#'
-            - item_name: Item 3
-              item_url: '#'
+            - item_name: Projects
+              item_url: '/home'
+            - item_name: About
+              item_url: '/about'
+
+    # Author settings
+    author:
+        name: Lee Mullins
+        image: /doks-theme/assets/images/author/author.jpg
+        bio: Your bio description here
+        social:
+            github: lemulli
+            email: lee.ellen.mullins@gmail.com
     footer:
         content:
             logo:
-                text: Project name
+                text: 
                 image:
-            copyright: Copyright &copy; 2017. - Project name <br>All rights reserved.
+            copyright: Copyright &copy; 2024. - Lee Mullins <br>All rights reserved.
         social_list:
-            - network_name: facebook
-              profile_url: '#'
-            - network_name: twitter
-              profile_url: '#'
-            - network_name: instagram
-              profile_url: '#'
+            - network_name: github
+              profile_url: 'https://github.com/lemulli'
+            - network_name: linkedin
+              profile_url: 'https://linkedin.com/in/lemulli'
             - network_name: youtube
-              profile_url: '#'
+              profile_url: 'https://youtube.com/@lemulli'
+
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
     comments:
@@ -36,7 +42,7 @@ doks:
 # SASS settings
 sass:
     sass_dir: ./doks-theme/_sass
-    style: :compressed
+    style: compressed
 
 # Jekyll settings
 layouts_dir: ./doks-theme/_layouts

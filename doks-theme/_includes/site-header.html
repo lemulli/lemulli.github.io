@@ -4,6 +4,15 @@
 			{% for item in site.doks.header.nav %}
 				<li><a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ item.item_url }}">{{ item.item_name }}</a></li>
 			{% endfor %}
+			{% if site.doks.footer.social_list %}
+				<li class="social-icons">
+					{% for item in site.doks.footer.social_list %}
+						<a href="{{ item.profile_url }}" target="_blank" class="social-list__item social-list__item--{{ item.network_name }}">
+							<i class="icon icon--{{ item.network_name }}"></i>
+						</a>
+					{% endfor %}
+				</li>
+			{% endif %}
 		</ul><!-- /.offcanvas__nav -->
 	</div><!-- /.offcanvas -->
 {% endif %}
@@ -25,6 +34,15 @@
 							{% for item in site.doks.header.nav %}
 								<li><a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ item.item_url }}">{{ item.item_name }}</a></li>
 							{% endfor %}
+							{% if site.doks.footer.social_list %}
+								<li class="social-icons">
+									{% for item in site.doks.footer.social_list %}
+										<a href="{{ item.profile_url }}" target="_blank" class="social-list__item social-list__item--{{ item.network_name }}">
+											<i class="icon icon--{{ item.network_name }}"></i>
+										</a>
+									{% endfor %}
+								</li>
+							{% endif %}
 						</ul><!-- /.site-header__nav -->
 						<button class="offcanvas-toggle visible-xs">
 							<span></span>

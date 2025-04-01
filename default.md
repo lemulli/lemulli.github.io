@@ -16,7 +16,7 @@ author:
     description: Author description
 
 # Micro navigation
-micro_nav: true
+micro-nav: false
 
 # Page navigation
 page_nav:
