@@ -23,12 +23,26 @@ body {
 
 /* Container constraints */
 .container {
-  max-width: 1200px !important;
+  max-width: 1200px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Row constraints */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Column constraints */
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Hide micro navigation */
