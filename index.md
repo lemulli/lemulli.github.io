@@ -4,7 +4,7 @@ layout: homepage
 keywords: AI, Data Science, Salesforce, Retrieval-Augmented Generation, Ethical AI, Portfolio, LE Mullins
 
 # Hero section
-title: "Lee Mullins"
+title: "Lee <3 Mullins"
 description:  <br><br>Hi, I'm <b>Lee</b>. I'm a <b>Data Engineer</b>.<br><br>
     
      I focus on the upstream work of <b>data cleaning</b> and <b>quality assurance</b> - building <b><u>reliable data foundations</u></b> that teams can actually trust and use. <br><br>
