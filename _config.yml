@@ -1,6 +1,7 @@
 # Theme settings
 doks:
-    baseurl:
+    url: 'https://lemulli.github.io/'
+    baseurl: ''
     color_theme: yellow # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
