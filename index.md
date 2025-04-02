@@ -9,7 +9,7 @@ description:  <br><br>Hi, I'm <b>Lee</b>. I'm a <b>Data Engineer</b>.<br><br>
     
      I focus on the upstream work of <b>data cleaning</b> and <b>quality assurance</b> - building <b><u>reliable data foundations</u></b> that teams can actually trust and use. <br><br>
 
-     Below you can find samples of some of my <b>past and current projects</b>:<br> <br>
+     Below you can find samples of some of my <b>past and current projects</b>:<br>  <br>
 
      </span><br><br>
 
